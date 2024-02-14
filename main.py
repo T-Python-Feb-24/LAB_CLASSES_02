@@ -5,8 +5,8 @@ print("name:",account1.get_account_holder(),"and the current balance:",account1.
 try:
     update_balance=account1.deposit(990)
     print("name:",account1.get_account_holder(),"and the current balance:",account1.get_balance())
-except Exception:
-    print("Make sure you entered a number")
+except Exception as e:
+    print(str(e))
 
 update_balance=account1.withdraw(500)
 print("name:",account1.get_account_holder(),"and the current balance:",account1.get_balance())
