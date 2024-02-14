@@ -29,7 +29,7 @@ username = input('Enter Your Name here: ')
 while True:
     try:
         print('-----Welcome To Our Bank-----')
-        print('select 1- To deposit \n2- To withdraw \n3- to get the account balance \n4- to exit')
+        print('select \n1- To deposit \n2- To withdraw \n3- to get the account balance \n4- to exit')
         user_choice:int = int(input('Please enter your choice here: '))
         if user_choice == 1:
             user_ = operation(username, user_list, user_instances)
