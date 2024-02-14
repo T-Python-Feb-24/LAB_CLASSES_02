@@ -19,7 +19,7 @@ class BankAccount:
     
     def set_balance(self, initial_balance:int):
         if not isinstance(initial_balance, int):
-            raise Exception("The balance must be intger number only.")
+            raise Exception("The balance amount must be intger number only.")
         self.__initial_balance = initial_balance
 
     def get_account_holder(self):
