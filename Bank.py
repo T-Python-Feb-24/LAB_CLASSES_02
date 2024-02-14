@@ -11,10 +11,10 @@ class BankAccount :
         return newBalance
     
     def withdraw (self,widthrawAmount):
+        if widthrawAmount >self.initial_balance:
+            raise Exception ("The balance is not sufficient for the withdrawal")
         newBalance =  self.initial_balance - widthrawAmount
         self.initial_balance = newBalance
-        if widthrawAmount >self.initial_balance:
-            raise Exception 
         return newBalance 
     
     def get_balance (self):
