@@ -19,13 +19,12 @@ class BancAccount ():
     
     
     def withdraw (self , amount):
-        self.amount=amount
+        if self.balance >= amount:
+          self.balance -= amount
+          return self.get_balance()
 
-        if self.balance == 0:
-            raise Exception("The balance is not allowed , less than the required limit")
         else:
-            withdraw_balance= self.balance - amount
-            return withdraw_balance
-
+            raise Exception("The balance is not allowed , less than the required limit")
+     
     
 
